@@ -19,6 +19,11 @@ from datetime import datetime
 from pathlib import Path
 import tempfile
 import time
+import sys
+import os
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.config import (
     CAMERA_WIDTH, CAMERA_HEIGHT, CAMERA_FPS,
